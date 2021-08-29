@@ -1,4 +1,4 @@
-package edu.consolegeekers.datastructures;
+package edu.consolegeekers.datastructures.linkedlist.simple;
 
 public interface LinkedList {
 

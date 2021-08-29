@@ -1,9 +1,10 @@
-package edu.consolegeekers.datastructures;
+package edu.consolegeekers.datastructures.linkedlist.simple;
 
 public class SimpleLinkedList implements LinkedList{
 
     private Node head;
 
+    @Override
     public void insertAtStart(int data){
         Node node = new Node(data);
         if(head == null) {
@@ -16,6 +17,7 @@ public class SimpleLinkedList implements LinkedList{
         }
     }
 
+    @Override
     public void insertAtEnd(int data){
         Node node = new Node(data);
         if(head == null) {
@@ -55,6 +57,7 @@ public class SimpleLinkedList implements LinkedList{
         refNode.next = node;
     }
 
+    @Override
     public void traverse(){
         Node refNode = head;
         while(refNode != null){
@@ -117,6 +120,7 @@ public class SimpleLinkedList implements LinkedList{
         refNode.next = refNode.next.next;
     }
 
+    @Override
     public int get(int index){
         // Get reference to the head first
         Node node = head;
